@@ -8,9 +8,11 @@ columns.forEach(col => {
     }
 
     col.ondrop = e => {
-        e.preventDefault();
+        e.preventDefault()
         const data = e.dataTransfer.getData("text")
-        e.target.appendChild(document.getElementById(data))
+        if (e.target.classList.contains("column")) {
+            e.target.appendChild(document.getElementById(data))
+        }
     }
 
     col.ondragstart = e => {
@@ -52,3 +54,7 @@ todos.forEach(t => {
 
     todoRef.appendChild(card)
 })
+
+
+const cards = document.querySelectorAll(".card")
+
