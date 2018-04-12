@@ -1,31 +1,46 @@
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 70px 500px 70px;
     grid-gap: 0.5em;
   }
 
-  header,
-  aside,
-  article,
-  footer {
+header,
+aside,
+article,
+footer {
     background: #eaeaea;
     padding: 1em;
-  }
+}
 
-  header, footer {
+header, footer {
     grid-column: 1 / 4;
-  }
+}
 
-  /* Demo Specific Styles */
-  body {
+/* Demo Specific Styles */
+body {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 95%;
     padding: 1em 0;
-  }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-  .grid > * {
-    display: flex;
+.column-header {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.grid > * {
     align-items: center;
     justify-content: center;
-  }
+}
+
+.card {
+    display: block;
+    border: 1px double gray;
+    padding: 20px;
+    min-height: 5vh;
+    font-size: larger;
+    margin-bottom: 1vh;
+
+}

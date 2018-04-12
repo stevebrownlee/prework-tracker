@@ -6,9 +6,9 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
               files: [
-                  "./src/index.html",
-                  "./src/scripts/**/*.js",
-                  "./src/styles/**/*.css",
+                  "./index.html",
+                  "./scripts/**/*.js",
+                  "./styles/**/*.css",
                   "!node_modules/**/*.js"
                 ],
               tasks: ["eslint", "browserify", "uglify", "copy"],
@@ -21,12 +21,12 @@ module.exports = function(grunt) {
             options: {
                 browserifyOptions: {
                     debug: true,
-                    paths: ["./src/scripts"],
+                    paths: ["./scripts"],
                 }
             },
             dist: {
                 files: {
-                    "dist/bundle.js": ["src/scripts/main.js"]
+                    "../dist/bundle.js": ["./scripts/main.js"]
                 }
             }
         },
@@ -37,16 +37,16 @@ module.exports = function(grunt) {
             build: {
                 files: [{
                     expand: true,
-                    cwd: "dist",
+                    cwd: "../dist",
                     src: "bundle.js",
-                    dest: "dist",
+                    dest: "../dist",
                     ext: ".min.js"
                 }]
             }
         },
         eslint: {
             src: [
-                "./src/scripts/**/*.js",
+                "./scripts/**/*.js",
                 "!node_modules/**/*.js"
             ]
         },
@@ -55,15 +55,15 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: "src",
+                        cwd: ".",
                         src: "styles/*",
-                        dest: "dist/"
+                        dest: "../dist/"
                     },
                     {
                         expand: true,
-                        cwd: "src",
+                        cwd: ".",
                         src: "index.html",
-                        dest: "dist/"
+                        dest: "../dist/"
                     }
                 ]
             }
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
     });
 
     // Load the plugin that provides the "uglify" task.
-    grunt.loadNpmTasks("grunt-contrib-uglify");
+    grunt.loadNpmTasks("grunt-contrib-uglify-es");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-eslint");
