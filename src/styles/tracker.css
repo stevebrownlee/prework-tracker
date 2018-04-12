@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 70px 500px 70px;
+    grid-gap: 0.5em;
+  }
+
+  header,
+  aside,
+  article,
+  footer {
+    background: #eaeaea;
+    padding: 1em;
+  }
+
+  header, footer {
+    grid-column: 1 / 4;
+  }
+
+  /* Demo Specific Styles */
+  body {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 1em 0;
+  }
+
+  .grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
