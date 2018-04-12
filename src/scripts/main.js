@@ -1,8 +1,11 @@
-const card = require("./card")
+const cards = require("./card")
 const dragdrop = require("./dragdrop")
+const provider = require("./tasks/provider")
+
+provider.wipe()
+const tasks = provider.load()
 
 dragdrop.init()
-card.init()
+cards.build(tasks)
 
-const cards = document.querySelectorAll(".card")
 
