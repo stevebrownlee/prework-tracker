@@ -17,12 +17,11 @@ header, footer {
     grid-column: 1 / 4;
 }
 
-/* Demo Specific Styles */
 body {
     margin: 0 auto;
     max-width: 95%;
     padding: 1em 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .column-header {
