@@ -2,7 +2,7 @@ const cards = require("./card")
 const dragdrop = require("./dragdrop")
 const provider = require("./tasks/provider")
 
-provider.wipe()
+// provider.wipe()
 const tasks = provider.load()
 
 dragdrop.init()

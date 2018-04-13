@@ -30,6 +30,11 @@ body {
     margin-bottom: 3vh;
 }
 
+.column__content {
+    overflow: scroll;
+    height: 100vh;
+}
+
 .grid > * {
     align-items: center;
     justify-content: center;
