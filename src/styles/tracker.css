@@ -3,7 +3,7 @@
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto 1fr auto;
     grid-gap: 0.5em;
-    height: 99vh;
+    height: 90vh;
   }
 
 aside,
@@ -24,28 +24,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.column-header {
-    text-align: center;
-    margin-bottom: 3vh;
-}
-
-.column__content {
-    overflow: scroll;
-    height: 75vh;
-}
-
-.grid > * {
-    align-items: center;
-    justify-content: center;
-}
-
-.card {
-    display: block;
-    background: #D1E5E1;
-    border: 1px double gray;
-    padding: 20px;
-    min-height: 5vh;
-    font-size: large;
-    margin-bottom: 1vh;
-    width: 82%;
+.introText {
+    font-size: small;
 }

@@ -18,13 +18,13 @@ const CardFactory = Object.create(null, {
                     return p.cardinality - n.cardinality
                 })
                 .forEach(t => {
+                    const parentComponent = document.querySelector(`.column__content--${t.column}`)
                     const card = document.createElement("section")
+
                     card.textContent = t.task
                     card.classList = `card card--${t.priority}`
                     card.draggable = true
                     card.id = `task--${t.id}`
-
-                    const parentComponent = document.querySelector(`.column__content--${t.column}`)
 
                     parentComponent.appendChild(card)
                 })

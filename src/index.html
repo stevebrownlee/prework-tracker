@@ -12,7 +12,16 @@
 
 <body>
   <div class="grid">
-    <header> <h1>Nashville Software School Pre-Work Tracker</h1> </header>
+    <header>
+      <h1>Nashville Software School Pre-Work Tracker</h1>
+      <p class="introText">
+        Use this tool to keep track of your journey through the NSS pre-work before class starts.
+        We have color coded the different tasks based on their priority.
+        <span class="card--high">Green cards</span> are top priority.
+        <span class="card--medium">Yellow cards</span> are good knowledge to have, but not absolutely required.
+        <span class="card--low">Red cards</span> are advanced topics that should be lowest on your priority list.
+      </p>
+    </header>
 
     <article class="column todo">
       <h2 class="column-header">Work To Do</h2>
@@ -28,8 +37,6 @@
       <h2 class="column-header">Completed Work</h2>
       <section class="column__content column__content--done"></section>
     </aside>
-
-    <footer> Footer </footer>
   </div>
 
   <script src="./bundle.js"></script>
