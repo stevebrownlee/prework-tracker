@@ -20,7 +20,7 @@ const CardFactory = Object.create(null, {
                 .forEach(t => {
                     const card = document.createElement("section")
                     card.textContent = t.task
-                    card.classList = "card card--${t.column}"
+                    card.classList = `card card--${t.priority}`
                     card.draggable = true
                     card.id = `task--${t.id}`
 

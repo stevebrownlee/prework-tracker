@@ -1,0 +1,13 @@
+.column-header {
+    text-align: center;
+    margin-bottom: 3vh;
+    background: #BAD6E5;
+    margin: 0 0 15px 0;
+    padding: 1rem;
+}
+
+.column__content {
+    overflow: scroll;
+    height: 77vh;
+    padding: 1em;
+}
