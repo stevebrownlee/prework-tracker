@@ -19,15 +19,39 @@ const TasksProvider = Object.create(null, {
                     duration: 16,
                     priority: "HIGH",
                     column: "todo",
-                    cardinality: 2
+                    cardinality: 3
                 },
                 {
                     id: 3,
-                    task: "Smarter Way to Learn JavaScript Intro",
-                    duration: 3,
+                    task: "Smarter Way to Learn JavaScript (1-9)",
+                    duration: 0.75,
                     priority: "HIGH",
                     column: "todo",
-                    cardinality: 3
+                    cardinality: 2
+                },
+                {
+                    id: 5,
+                    task: "Smarter Way to Learn JavaScript (10-12)",
+                    duration: 0.75,
+                    priority: "HIGH",
+                    column: "todo",
+                    cardinality: 2
+                },
+                {
+                    id: 6,
+                    task: "Smarter Way to Learn JavaScript (15-20)",
+                    duration: 0.75,
+                    priority: "HIGH",
+                    column: "todo",
+                    cardinality: 2
+                },
+                {
+                    id: 7,
+                    task: "Smarter Way to Learn JavaScript (35-38)",
+                    duration: 0.75,
+                    priority: "HIGH",
+                    column: "todo",
+                    cardinality: 2
                 },
                 {
                     id: 4,
@@ -36,6 +60,14 @@ const TasksProvider = Object.create(null, {
                     priority: "HIGH",
                     column: "todo",
                     cardinality: 0
+                },
+                {
+                    id: 8,
+                    task: "Team Treehouse - Digital Literacy Track",
+                    duration: 4,
+                    priority: "HIGH",
+                    column: "todo",
+                    cardinality: 4
                 }
             ]
 

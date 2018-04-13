@@ -3,14 +3,14 @@
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto 1fr auto;
     grid-gap: 0.5em;
-    height: 100vh;
+    height: 99vh;
   }
 
-header,
 aside,
 article,
 footer {
-    background: #eaeaea;
+    border: 1px dotted #0D355A;
+    border-radius: 5px;
     padding: 1em;
 }
 
@@ -18,9 +18,10 @@ header, footer {
     grid-column: 1 / 4;
 }
 
+
 body {
     margin: 0 auto;
-    max-width: 99%;
+    max-width: 80%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -36,10 +37,10 @@ body {
 
 .card {
     display: block;
+    background: #D1E5E1;
     border: 1px double gray;
     padding: 20px;
     min-height: 5vh;
-    font-size: larger;
+    font-size: large;
     margin-bottom: 1vh;
-
 }
