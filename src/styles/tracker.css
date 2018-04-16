@@ -2,16 +2,10 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto 1fr auto;
-    grid-gap: 0.5em;
+    grid-gap: 1.5em;
     height: 90vh;
-  }
-
-aside,
-article,
-footer {
-    border: 1px dotted #0D355A;
-    border-radius: 5px;
 }
+
 
 header, footer {
     grid-column: 1 / 4;

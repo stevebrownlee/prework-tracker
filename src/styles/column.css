@@ -1,3 +1,7 @@
+.column {
+    border: 1px solid rgba(177, 191, 192, 0.623);
+}
+
 .column-header {
     text-align: center;
     margin-bottom: 3vh;

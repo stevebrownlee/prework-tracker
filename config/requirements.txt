@@ -1,4 +1,0 @@
-API
-django==1.11
-djangorestframework>=3.7.0
-gunicorn>=19.7.1

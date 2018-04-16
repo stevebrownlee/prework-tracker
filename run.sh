@@ -4,7 +4,7 @@
 #
 if [ -z $1 ]
 then
-  docker run -d -it -p 8081:8081 stevebrownlee/preworktracker:latest
+  docker run -d -p 8081:8081 stevebrownlee/preworktracker:latest
 
 else
   docker run -it -p 8081:8081 stevebrownlee/preworktracker:latest
