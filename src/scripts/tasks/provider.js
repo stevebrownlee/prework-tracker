@@ -118,7 +118,7 @@ const TasksProvider = Object.create(null, {
                     cardinality: 9
                 },
                 {
-                    id: 14,
+                    id: 15,
                     task: "Team Treehouse - CSS Flexbox Layout",
                     duration: 2,
                     priority: "low",
@@ -126,7 +126,7 @@ const TasksProvider = Object.create(null, {
                     cardinality: 12
                 },
                 {
-                    id: 14,
+                    id: 16,
                     task: "Team Treehouse - AJAX Basics",
                     duration: 2,
                     priority: "low",
@@ -134,7 +134,7 @@ const TasksProvider = Object.create(null, {
                     cardinality: 11
                 },
                 {
-                    id: 14,
+                    id: 17,
                     task: "Team Treehouse - Console Foundations",
                     duration: 2,
                     priority: "low",
